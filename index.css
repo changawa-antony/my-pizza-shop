@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.selection-image, .input-image{
+    width: 30px;
+}
+
+.input-text{
+    background-color: rgb(187, 187, 187);
+    width: 600px;
+    height: 60px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.selection{
+    display: flex;
+    flex-direction: row;
+}
+
+.selection-image img{
+    background-color: orange;
+    width: 70px;
+    height: 60px;
+}
+
+.input-image img{
+    height: 60px;
+    padding: 5px;
+}
+
+.input-text p{
+    font-weight: bold;
+    font-size: 40px;
+    color: grey;
+}
+
+.input-image{
+    background-color: orange;
+    margin-left: 10px;
+    width: max-content;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.input-image:hover{
+    background-color: rgb(6, 196, 6);
+}
+
+.main-content{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 100px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.radio-selection{
+    display: none;
+    background-color: rgb(187, 187, 187);
+    width: 600px;
+    margin-left: 80px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.form-check{
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 50px;
+}
+
+.form-check:hover{
+    background-color: rgb(151, 151, 151);
+}
+
+.form-check p{
+    float: right;
+}
+
+.all-products{
+    margin-bottom: 20px;
+}
