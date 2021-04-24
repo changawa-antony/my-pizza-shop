@@ -57,7 +57,7 @@ nav{
 }
 
 .main-content{
-    margin-left: 100px;
+    margin-left: 200px;
     margin-top: 70px;
 }
 
@@ -93,4 +93,32 @@ h2{
 
 .all-products{
     margin-bottom: 20px;
+}
+
+.display-banner img{
+    width: 600px;
+}
+
+.main-section{
+    width: 80%;
+}
+
+.display-section{
+    margin-left: 70px;
+}
+
+.display-order{
+    border: 2px solid rgb(162, 162, 162);
+}
+
+.btn-1{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+.btn-2{
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 180px;
 }
