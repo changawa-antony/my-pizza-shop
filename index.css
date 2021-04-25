@@ -4,10 +4,18 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+body{
+    overflow: hidden;
+}
 
 nav{
     margin-top: 30px;
     margin-left: 30px;
+}
+
+.navbar-brand img{
+    width: 300px;
+    height: 80px;
 }
 
 .selection-image, .input-image{
@@ -121,4 +129,40 @@ h2{
     width: 250px;
     margin-top: 20px;
     margin-left: 180px;
+}
+
+.footer-logo img{
+    width: 100px;
+}
+
+.footer-logo{
+    text-align: center;
+    padding-top:30px
+}
+
+footer{
+    margin-top: 210px;
+}
+
+.footer-icons{
+    text-align: right;
+    padding :20px;
+    padding-right: 80px;
+    font-size: 30px;
+
+}
+
+.footer-text{
+    padding-top: 30px;
+    padding-left: 30px;
+    color: rgb(109, 109, 109);
+}
+
+.footer-icons i{
+    margin-right: 20px;
+}
+
+.footer-icons i:hover{
+    color: green;
+    cursor: pointer;
 }
