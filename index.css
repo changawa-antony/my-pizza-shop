@@ -14,7 +14,7 @@ nav{
 }
 
 .navbar-brand img{
-    width: 300px;
+    width: 400px;
     height: 80px;
 }
 
@@ -116,6 +116,7 @@ h2{
 }
 
 .display-order{
+    width: max-content;
     border: 2px solid rgb(162, 162, 162);
 }
 
@@ -162,7 +163,9 @@ footer{
     margin-right: 20px;
 }
 
+
 .footer-icons i:hover{
     color: green;
     cursor: pointer;
 }
+
