@@ -20,15 +20,16 @@
         </nav>
 
         <div class="container-fluid">
-            <div class="container order-details col-8 bg-warning">
+            <div class="container order-details col-8">
                 <!-- order summary-->
-                <div class="order-selected bg-danger">
-                    <h2>Confirm your order</h2>
+                <div class="order-selected">
+                    <h2>Order Summary</h2>
                     <div class="order-summary">
-                        <div class="order bg-primary">
+                        <div class="order">
                             <p>Order 1</p>
                             <p>500 ksh</p>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -37,15 +38,18 @@
                 <div class="delivery-info">
                     <h2>Delivery Information</h2>
                     <div class="delivery-selection">
-                        <div class="delivery-display">
-                            <div class="delivery-point bg-primary">
+                        <div class="delivery-display row">
+                            <div class="delivery-point">
                                 <p>Delivery Point</p>
                                 <p class="p-price">0 KSH</p>
+                            </div>
+                            <div class="drop-location">
+                                <img src="./images/icons/icons8-plus-128.png" alt="" id="del-point">
                             </div>
                         </div>
                         
 
-                        <div class="radio-selection">
+                        <div class="radio-selection" id="del-station">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">
@@ -85,35 +89,48 @@
 
                 <!-- Total price -->
 
-                <div class="total-order">
-                    <div class="price">
-                        <p>Total</p>
-                        <p>0 ksh</p>
+                <div class="total">
+                    <h2>Total Charges</h2>
+                    <div class="total-order">
+                        <div class="price">
+                            <p>Total</p>
+                            <p>0 ksh</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="place-order">
+                    <button type="button" class="btn btn-warning text-light font-weight-bold btn-1">Place Order</button>
                 </div>
 
             </div>
         </div>
+
+
        
+        <footer class="bg-warning">
+            <div class="footer-content row">
+                <div class="footer-text col-4">
+                    <P>Copyright <i class="fa fa-copyright" aria-hidden="true"> 2021 </i></P>
+                </div>
 
+                <div class="footer-logo col-4">
+                    <img src="./images/Peppizzainn.png">
+                </div>
 
-
-
-
-
-
-
-
-
-
-
-
+                <div class="footer-icons col-4">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+            </div>
+        </footer>
 
         
         <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="./JS/checkout.js" type="text/javascript"></script>
+        <script src="./JS/index.js" type="text/javascript"></script>
     </body>
 </html>
