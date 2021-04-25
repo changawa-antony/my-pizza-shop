@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+
+nav{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.navbar-brand img{
+    width: 400px;
+    height: 80px;
+}
+
+.form-check p{
+    float: right;
+}
+
+.radio-selection{
+    background-color: rgb(187, 187, 187);
+    width: 600px;
+    margin-left: 80px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.price p{
+    display: inline-block;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  color: grey;
+}
+
+.order-selected, .delivery-info{
+    margin-top: 20px;
+}
+
+.order-details{
+    padding: 10px;
+    width: 60%;
+}
+
+.order{
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.order-summary, .delivery-display{
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.order p{
+    display: inline-block;
+    margin-left: 300px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delivery-point{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.p-price{
+    margin-left: 300px;
+}
+
+    
