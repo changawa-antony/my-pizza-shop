@@ -95,6 +95,11 @@ h2{
     background-color: rgb(151, 151, 151);
 }
 
+.main-section{
+    display: flex;
+    flex-direction: row;
+}
+
 .form-check p{
     float: right;
 }
@@ -154,7 +159,7 @@ h2{
 }
 
 footer{
-    margin-top: 210px;
+    margin-top: 250px;
 }
 
 .footer-icons{

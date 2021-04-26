@@ -57,60 +57,70 @@ $(document).ready(function() {
       //Prise allocation for pizza
 
       if(pizzaSize == "small"){
-        var price = 500;
+        var price = 200;
       }
 
       if(pizzaSize == "medium"){
-        var price = 750;
+        var price = 300;
       }
 
       if(pizzaSize == "large"){
-        var price = 950;
+        var price = 400;
       }
 
       //Prise allocation for crust
 
       if(crust == "crispy"){
-        var crustPrice = 500;
+        var crustPrice = 150;
       }
 
       if(crust == "stuffed"){
-        var crustPrice = 750;
+        var crustPrice = 250;
       }
 
       if(crust == "glutten-free"){
-        var crustPprice = 950;
+        var crustPprice = 300;
       }
 
       //Prise allocation for topping
 
       if(topping == "pepperoni"){
-        var toppingPrice = 500;
+        var toppingPrice = 150;
       }
 
       if(topping == "mushroom & chicken"){
-        var toppingPrice = 750;
+        var toppingPrice = 300;
       }
 
       if(topping == "bacon"){
-        var toppingprice = 950;
+        var toppingprice = 400;
       }
 
       if(topping == "extra-cheesy"){
-        var toppingPrice = 950;
+        var toppingPrice = 450;
       }
 
+
+    // getting total price
+
+      var total = price + crustPrice + toppingPrice;
 
 
       //initializing an object
 
-      function Order (pizzaSize, crust, topping) {
+      function Order (pizzaSize, crust, topping,total) {
       this.orderSize = pizzaSize;
       this.orderCrust = crust;
       this.orderTopping = topping;
+      this.cost = total;
       }
 
-      var newOrder = new Order(pizzaSize, crust, topping);
+      var newOrder = new Order(pizzaSize, crust, topping, total);
+
+      Order.prototype.toString = function oderToString() {
+        return `${this.cost}`
+      }
+
 
       //displaying object data
 
@@ -119,8 +129,8 @@ $(document).ready(function() {
         "<div class='side'>" +
         "<ul>" +
         "<li><span>Pizza Size</span><span>" + newOrder.orderSize + "</span> - <span> " + price + " </span></li>" +
-        "<li><span>Pizza Crust</span><span>" + newOrder.orderCrust + "</span> - <span> " + price + " </span></li>" +
-        "<li><span>Pizza Topping</span><span>" + newOrder.orderTopping + "</span> - <span> " + price + " </span></li>" +
+        "<li><span>Pizza Crust</span><span>" + newOrder.orderCrust + "</span> - <span> " + crustPrice + " </span></li>" +
+        "<li><span>Pizza Topping</span><span>" + newOrder.orderTopping + "</span> - <span> " + toppingPrice + " </span></li>" +
         "</ul>" +
         "</div>"
       );
