@@ -156,35 +156,25 @@ $(document).ready(function() {
 
       //Assining delivary points charge
 
-    var subTotal = retrivedData.cost;
-
-
     $("#addlocation").click(function() {
 
       var delivery = prompt("Please enter the delivery point you prefer");
 
       alert("Your order will be delivered to " + delivery);
-
       
-
       if(delivery == null){
-  
-          var charge = 0;
-         var totalCharges = retrivedData.cost + charge;
+        var charge = 0;
       }
       else{
         var charge = 200;
-        var totalCharges = retrivedData.cost + charge;
-
       }
+      
+      var totalCharges =  restoredData.cost + charge;
+      $("#all-total").html(totalCharges + "KSH");
 
-      console.log(totalCharges);
-
-
-      $("#all-total").append(totalCharges + "KSH");
-  
+    });
     
-  });
+    
   
 
 });
