@@ -1,7 +1,7 @@
 
 //pizza products selections
-
 $(document).ready(function() {
+
     $("#pizza-size").click(function() {
       $("#pizza-select").toggle();
       
@@ -22,8 +22,11 @@ $(document).ready(function() {
       
     });
 
+    //Displaying user input
+
+    $(document).ready(function() {
+
     $("#add-order").click(function() {
-      event.preventDefault();
 
       //collecting users input
   
@@ -101,11 +104,11 @@ $(document).ready(function() {
       }
 
 
-    // getting total price
+      // getting total price
 
       var total = price + crustPrice + toppingPrice;
-
-
+      alert(total);
+    
       //initializing an object
 
       function Order (pizzaSize, crust, topping,total) {
@@ -117,10 +120,9 @@ $(document).ready(function() {
 
       var newOrder = new Order(pizzaSize, crust, topping, total);
 
-      Order.prototype.toString = function oderToString() {
-        return `${this.cost}`
-      }
-
+      var storedData = JSON.stringify(Order);
+      localStorage.setItem("Order", storedData)
+      
 
       //displaying object data
 
@@ -138,10 +140,61 @@ $(document).ready(function() {
       $("input[name='size']:checked").val("");
       $("input[name='crust']:checked").val("");
       $("input[name='topping']:checked").val("");
-  
-    });
+
+
+      //checkout page
+
 
   });
+    
+
+});
+
+$(document).ready(function() {
+
+  let retrivedData = localStorage.getItem("newOrder");
+  var restoredData = JSON.parse(retrivedData);
+  console.log(restoredData.cost);
+
+  $("#total-order-charge").html(restoredData.cost + "KSH");
+
+      //Assining delivary points charge
+
+    var subTotal = retrivedData.cost;
+
+    $("#all-total").html(subTotal + "KSH");
+
+  var totalCharges;
+
+    $("#all-total").html(totalCharges + "KSH");
+
+    $("#addlocation").click(function() {
+
+      var delivery = prompt("Please enter the delivery point you prefer");
+
+      alert("Your order will be delivered to " + delivery);
+
+      if(delivery == null){
+          var charge = 0;
+          totalCharges = retrivedData + charge;
+      }
+      else{
+        var charge = 200;
+        totalCharges = retrivedData + charge;
+
+      }
 
 
+     
+  
+    
+  });
+  
+
+});
+
+
+
+
+});
 

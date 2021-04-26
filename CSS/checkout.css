@@ -66,6 +66,11 @@ h2{
     border-radius: 10px;
 }
 
+.delivery-display{
+    display: flex;
+    justify-content: center;
+}
+
 .order p{
     display: inline-block;
     margin-left: 300px;
@@ -99,6 +104,10 @@ h2{
 .drop-location img{
     height: 60px;
     padding: 5px;
+}
+
+.drop-location btn{
+    width: 80px;
 }
 
 .drop-location{

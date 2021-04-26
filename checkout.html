@@ -27,7 +27,7 @@
                     <div class="order-summary">
                         <div class="order">
                             <p>Order 1</p>
-                            <p>500 ksh</p>
+                            <p id="total-order-charge">0 ksh</p>
                         </div>
                         
                     </div>
@@ -39,51 +39,8 @@
                     <h2>Delivery Information</h2>
                     <div class="delivery-selection">
                         <div class="delivery-display row">
-                            <div class="delivery-point">
-                                <p>Delivery Point</p>
-                                <p class="p-price">0 KSH</p>
-                            </div>
-                            <div class="drop-location">
-                                <img src="./images/icons/icons8-plus-128.png" alt="" id="del-point">
-                            </div>
+                                <button type="button" class="btn btn-warning text-light font-weight-bold btn-1" id="addlocation">Add delivery point</button>
                         </div>
-                        
-
-                        <div class="radio-selection" id="del-station">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                City market
-                                </label>
-                                <p>200 KSH</p>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                Ngong Road
-                                </label>
-                                <p>300 KSH</p>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                Kasarani
-                                </label>
-                                <p>500 KSH</p>
-                            </div>
-
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                Umoja
-                                </label>
-                                <p>400 KSH</p>
-                            </div>
-
-                        </div>
-                        
                     </div>
                 </div>
 
@@ -94,7 +51,7 @@
                     <div class="total-order">
                         <div class="price">
                             <p>Total</p>
-                            <p>0 ksh</p>
+                            <p id="all-total">0 ksh</p>
                         </div>
                     </div>
                 </div>
