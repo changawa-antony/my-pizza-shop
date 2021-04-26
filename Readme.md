@@ -21,7 +21,7 @@ $ git clone https://github.com/changawa-antony/my-pizza-shop
 
 ## Development Approach
 
-This app uses Behaviour Driven Approach (BDD) when the user has to input some data through the form and in return the application provides the Akan names for them.
+This app is developed through Behaviour Driven Approach (BDD) where the user has to input some data through the form and in return the application provides the order summary including all the charges.
 
 ### Technologies Used
 1. HTML
