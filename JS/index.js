@@ -141,10 +141,6 @@ $(document).ready(function() {
       $("input[name='crust']:checked").val("");
       $("input[name='topping']:checked").val("");
 
-
-      //checkout page
-
-
   });
     
 
@@ -154,7 +150,7 @@ $(document).ready(function() {
 
   let retrivedData = localStorage.getItem("newOrder");
   var restoredData = JSON.parse(retrivedData);
-  console.log(restoredData.cost);
+
 
   $("#total-order-charge").html(restoredData.cost + "KSH");
 
@@ -162,11 +158,6 @@ $(document).ready(function() {
 
     var subTotal = retrivedData.cost;
 
-    $("#all-total").html(subTotal + "KSH");
-
-  var totalCharges;
-
-    $("#all-total").html(totalCharges + "KSH");
 
     $("#addlocation").click(function() {
 
@@ -174,18 +165,23 @@ $(document).ready(function() {
 
       alert("Your order will be delivered to " + delivery);
 
+      
+
       if(delivery == null){
+  
           var charge = 0;
-          totalCharges = retrivedData + charge;
+         var totalCharges = retrivedData.cost + charge;
       }
       else{
         var charge = 200;
-        totalCharges = retrivedData + charge;
+        var totalCharges = retrivedData.cost + charge;
 
       }
 
+      console.log(totalCharges);
 
-     
+
+      $("#all-total").append(totalCharges + "KSH");
   
     
   });
