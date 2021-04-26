@@ -132,6 +132,18 @@ h2{
     margin-left: 180px;
 }
 
+.side{
+    border: 2px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    color: grey;
+    margin: 5px;
+    padding-top: 10px;
+}
+
+.side>ul>li>span{
+    padding: 6px;
+}
+
 .footer-logo img{
     width: 100px;
 }
