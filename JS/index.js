@@ -151,7 +151,6 @@ $(document).ready(function() {
   var restoredData = JSON.parse(retrivedData);
 
   var values = Object.values(restoredData);
-  console.log(values[3])
 
   var sum = values[3];
 
