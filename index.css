@@ -4,8 +4,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-body{
-    overflow: inherit;
+
+.content-holder{
+    height: 830px;
 }
 
 nav{
@@ -156,10 +157,6 @@ h2{
 .footer-logo{
     text-align: center;
     padding-top:30px
-}
-
-footer{
-    margin-top: 250px;
 }
 
 .footer-icons{
